@@ -1,0 +1,13 @@
+@mixin textStyle($fs, $fw, $color) {
+  font: {
+    size: $fs;
+    weight: $fw;
+  }
+  color: $color;
+}
+
+@mixin borderStyle($bs, $bw, $color){
+  border-style: $bs;
+  border-width: $bw;
+  border-color: $color;
+}

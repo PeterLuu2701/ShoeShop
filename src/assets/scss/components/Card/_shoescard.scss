@@ -1,0 +1,45 @@
+.card {
+  // width: 90%;
+  position: relative;
+
+  .product-name,
+  .product-short-description {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .to_detail {
+    width: 50%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: $green-2 !important;
+    border-color: $green-2 !important;
+    border-radius: 0 !important;
+  }
+
+  .price {
+    width: 50%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: $gray-1 !important;
+    border-color: $gray-1 !important;
+    border-radius: 0 !important;
+  }
+
+  .like {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .to_detail {
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,23 @@
+footer{
+        margin-top: 10%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        background-color: #F5F5F5;
+    .row {
+        .col {
+            padding-left: 10%;
+            h3 {
+                font-weight: 600;
+            }
+
+            ul {
+                list-style: none;
+            }
+        }
+
+        .col:nth-child(2){
+            border-left: solid 1px $black-3;
+            border-right: solid 1px $black-3;;
+        }
+    }
+}

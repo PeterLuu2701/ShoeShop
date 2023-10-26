@@ -1,0 +1,143 @@
+.profile {
+  &__title {
+    background: linear-gradient(180deg, #f21299 0%, #1b02b5 100%);
+    width: 40%;
+    @include textStyle($fs-9, $fw-2, $white-7);
+  }
+
+  &__info {
+    max-width: 96%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    border-bottom: 1px solid $gray-1;
+  }
+
+  .info__avatar img {
+    width: 100%;
+    border-radius: 50%;
+  }
+
+  .f-input {
+    padding: 25px 0 25px 0;
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    position: relative;
+
+    label {
+      width: 90%;
+      text-align: left;
+      margin-bottom: 10px;
+      @include textStyle($fs-4, $fw-3, #00000099);
+    }
+
+    input {
+      background-color: #edeaea;
+      border-radius: 5px;
+      padding-left: 10px;
+      padding-right: 40px;
+      width: 90%;
+      height: 50px;
+      @include textStyle($fs-3, $fw-2, $black-1);
+      border: none;
+      outline: none;
+
+      &[disabled] {
+        cursor: not-allowed;
+      }
+    }
+
+    span {
+      position: absolute;
+      right: 15px;
+      top: 75px;
+      @include textStyle($fs-4, $fw-3, #00000099);
+      cursor: pointer;
+    }
+  }
+
+  .f-radio {
+    padding-top: 30px;
+    display: flex;
+    justify-content: end;
+    @include textStyle($fs-4, $fw-2, $black-1);
+
+    .content {
+      display: flex;
+      width: 90%;
+      padding-top: 30px;
+    }
+
+    .gender-label {
+      text-align: left;
+      margin-bottom: 10px;
+      @include textStyle($fs-4, $fw-3, #00000099);
+    }
+
+    .gender {
+      width: 60%;
+      display: flex;
+      justify-content: space-around;
+      padding-left: 10px;
+    }
+
+    .male,
+    .female {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+
+      input {
+        margin-bottom: 5px;
+      }
+    }
+
+    input {
+      appearance: none;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: $gray-3;
+      transition: 0.2s all;
+      cursor: pointer;
+
+      &:checked {
+        background-color: $blue-1;
+        border: 12px solid $gray-3;
+      }
+    }
+  }
+
+  .f-error {
+    @include textStyle($fs-1, $fw-2, $red-1);
+    width: 90%;
+    margin-top: 5px;
+  }
+
+  .btn-submit {
+    padding-top: 60px;
+    padding-left: 60px;
+
+    button {
+      padding: 16px 35px;
+      border-radius: 30px;
+      text-transform: uppercase;
+      background-color: $blue-1;
+      box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.14),
+        0px 1px 10px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.2);
+      @include textStyle($fs-2, $fw-3, $white-1);
+      border: none;
+      cursor: pointer;
+    }
+  }
+
+  .order {
+    max-width: 96%;
+    margin: 0 auto;
+    padding-top: 20px;
+
+    &-title {
+      @include textStyle($fs-8, $fw-2, $purple-2);
+    }
+  }
+}

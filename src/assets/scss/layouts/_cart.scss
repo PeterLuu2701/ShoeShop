@@ -1,0 +1,42 @@
+.cart {
+  &__title {
+    border-bottom: 1px solid $gray-1;
+  }
+
+  .quantity {
+    background-color: $gray-3;
+    padding: 0 32px;
+  }
+
+  .btn-quantity {
+    padding: 5px 12px;
+    border-radius: 5px;
+    border: none;
+    background-color: $blue-1;
+    color: $white-1;
+  }
+
+  .btn-delete {
+    text-transform: uppercase;
+    padding: 10px 25px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.14),
+      0px 1px 10px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.2);
+    background-color: $red-4;
+    color: $white-1;
+  }
+
+  .btn-order,
+  .btn-home {
+    @extend .btn-delete;
+    background-color: $yellow-3;
+    text-decoration: none;
+  }
+
+  .table-info {
+    td {
+      padding: 15px 0;
+    }
+  }
+}

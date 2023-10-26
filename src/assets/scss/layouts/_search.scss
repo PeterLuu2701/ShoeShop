@@ -1,0 +1,70 @@
+.search {
+  .search_form {
+    form {
+      .form-group {
+        label {
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 24px;
+          letter-spacing: 0.135px;
+          color: rgba(0, 0, 0, 0.6);
+        }
+        .form-inline {
+          display: flex;
+          input {
+            width: 70%;
+            height: 54px;
+            background: rgba(33, 33, 33, 0.08);
+            border-radius: 4px 4px 0px 0px;
+            flex: none;
+            order: 0;
+            align-self: stretch;
+            flex-grow: 0;
+          }
+
+          button {
+            width: 150px;
+            margin-left: 25px;
+            left: 40%;
+            background: #6200ee;
+            box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.14),
+              0px 1px 10px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.2);
+            border-radius: 50px;
+            padding: 12px;
+          }
+        }
+      }
+    }
+  }
+
+  .result_head {
+    width: 100%;
+    height: 74px;
+    background: linear-gradient(180deg, #f21299 0%, #1b02b5 100%);
+    margin-top: 25px;
+    padding-top: 15px;
+  }
+
+  .price_form {
+    margin: 25px 0;
+
+    select {
+      width: 30%;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 24px;
+      letter-spacing: 0.135px;
+      color: rgba(0, 0, 0, 0.6);
+      background: rgba(33, 33, 33, 0.08);
+      border-radius: 4px 4px 0px 0px;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .price_form {
+    select {
+      width: 50% !important;
+    }
+  }
+}

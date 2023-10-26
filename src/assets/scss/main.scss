@@ -1,0 +1,19 @@
+// HELPERS
+@import './helpers/variables';
+@import './helpers/mixins';
+
+// BASE
+@import './base/reset';
+
+// COMPONENTS
+@import './components/Carousel/carousel';
+@import './components/Card/shoescard';
+@import './components/Footer/footer';
+
+// LAYOUTS
+@import './layouts/register';
+@import './layouts/detail';
+@import './layouts/cart';
+@import './layouts/login';
+@import './layouts/profile';
+@import './layouts/search';

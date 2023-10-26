@@ -1,0 +1,87 @@
+.login {
+  .login_form {
+    position: relative;
+    margin: 0 auto;
+    width: 46%;
+
+    label {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 24px;
+      color: rgba(0, 0, 0, 0.6);
+    }
+
+    input {
+      width: 100%;
+      padding: 16px 12px 14px 14px;
+      height: 54px;
+      background: rgba(33, 33, 33, 0.08);
+      border-radius: 4px 4px 0px 0px;
+      flex: none;
+      order: 0;
+      align-self: stretch;
+      flex-grow: 0;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+
+    .login_btn {
+      margin-top: 20px;
+      width: 121px;
+      height: 48px;
+      background: #6200ee;
+      box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.14),
+        0px 1px 10px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.2);
+      border-radius: 50px;
+    }
+
+    .reg_nav {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 24px;
+      letter-spacing: 0.135px;
+      color: rgba(21, 42, 235, 0.8);
+      grid-column-start: 2;
+    }
+
+    .form-group:last-of-type {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      align-items: center;
+      justify-content: center;
+
+      a {
+        display: block;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.social_login {
+  margin: 0 auto;
+  width: 100% !important;
+  display: flex;
+  justify-content: center;
+
+  .facebook_login {
+    width: 50%;
+    height: 63px;
+    margin-top: 60px;
+    float: left;
+    background: #1877f2;
+    box-shadow: 0px 38.4869px 71.4756px rgba(0, 0, 0, 0.07);
+    border-radius: 20.9968px;
+    border-width: 1px;
+  }
+
+  .fa-facebook {
+    margin: 5px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .login_form {
+    width: 70% !important;
+  }
+}
